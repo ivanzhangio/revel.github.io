@@ -48,7 +48,7 @@ func (t *MyAppTest) TestRobotsPage() {
     t.AssertContentType("text/html")
 }
 // Will not appear in panel as it does not start with `Test`.
-func (t *MyAppTest) TEstFavIcon() {
+func (t *MyAppTest) TestFavIcon() {
     t.Get("/favicon.ico")
     t.AssertOk()
     t.AssertContentType("text/html")
